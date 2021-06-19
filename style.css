@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+/* * {
+  border: 1px solid red;
+} */
+
+
+/* General */
+body {
+  background: url("assets/background.jpg");
+  background-size: contain;
+  background-color: #171925;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  color: #f8f8f2;
+}
+
+.container {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+  color: #f8f8f2;
+}
+
+
+/* Banner */
+#banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#banner img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+
+/* Showcase */
+#showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-content: center;
+
+}
+
+.box {
+  min-width: 120px;
+  width: 17.5%;
+  max-width: 212px;
+  text-align: center;
+  margin: 1.8%;
+  border: 1px solid #f8f8f2;
+  border-radius: 4px;
+  background-color: #282a36;
+  transition: all .5s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box:hover h3 {
+  color: #50fa7b;
+}
+
+.box img {
+  width: 15rem;
+  max-width: 98%;
+  height: auto;
+  padding: 1px;
+}
+
+.box h3 {
+  margin: 0px;
+  font-family: "Gochi Hand", serif;
+  font-size: clamp(16px, 1.75vw, 36px);
+  font-weight: normal;
+  color: #bd93f9;
+  border-top: 1px solid #f8f8f2;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+footer a {
+  text-align: center;
+}
+
+footer img {
+  width: 15%;
+  height: auto;
+}
+
+
+/* Media */
+@media only screen and (max-width: 1330px) {
+  .box h3 {
+    font-size: clamp(16px, 2.5vw, 26px)
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .box {
+    width: 26%;
+  }
+
+  .box h3 {
+    font-size: clamp(16px, 2.5vw, 26px);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .box {
+    width: 35%;
+  }
+
+  .box h3 {
+    font-size: clamp(16px, 2.5vw, 26px);
+  }
+}
