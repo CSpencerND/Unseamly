@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
-/* * {
+* {
   border: 1px solid red;
-} */
-
+}
 
 /* General */
 body {
@@ -27,7 +26,6 @@ a {
   color: #f8f8f2;
 }
 
-
 /* Banner */
 #banner {
   display: flex;
@@ -42,7 +40,6 @@ a {
   height: auto;
 }
 
-
 /* Showcase */
 #showcase {
   display: flex;
@@ -51,7 +48,6 @@ a {
   margin-top: 40px;
   margin-bottom: 40px;
   align-content: center;
-
 }
 
 .box {
@@ -107,7 +103,6 @@ footer img {
   height: auto;
 }
 
-
 /* Media */
 @media only screen and (max-width: 1330px) {
   .box h3 {
@@ -128,6 +123,7 @@ footer img {
 @media only screen and (max-width: 414px) {
   .box {
     width: 35%;
+    flex: 1 1 0;
   }
 
   .box h3 {
